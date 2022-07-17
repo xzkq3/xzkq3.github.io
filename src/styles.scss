@@ -1,0 +1,50 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'src/app/utils/_styleVariables';
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow: overlay;
+  overflow-x: hidden;
+  @media screen and (min-device-width: $desktop-size) {
+    font-size: 18px;
+  }
+  @media screen and (max-device-width: $desktop-size) {
+    font-size: 4.79vw;
+    -webkit-transform:translate3d(0,0,0);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-body {
+  position: fixed;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Hesterica';
+  src: url('assets/fonts/Hesterica.otf') format('opentype'), url('assets/fonts/Hesterica.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kano';
+  src: url('assets/fonts/Kano.otf') format('opentype');
+}
